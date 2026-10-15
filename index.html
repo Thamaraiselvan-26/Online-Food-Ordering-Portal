@@ -1,38 +1,131 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiteDash - Online Food Ordering</title>
+    <title>Online Food Ordering Portal</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #f8f9fa; }
-        header { background: #ff4757; color: white; padding: 20px; text-align: center; }
-        .container { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .promo { background: #ffa502; color: white; padding: 10px; text-align: center; font-weight: bold; border-radius: 4px; }
-        .menu-item { display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #ddd; }
-        .price { color: #ff4757; font-weight: bold; }
-        .status { color: green; font-weight: bold; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #263238;
+        }
+
+        header {
+            background: #b83220;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #772719;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 12px;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px #ddd;
+        }
+
+        h2 {
+            color: #b83220;
+        }
+
+        .offer {
+            background: #fff0dc;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        footer {
+            background: #772719;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>BiteDash Portal v1.0 (Stable)</h1>
-        <p>Delicious food delivered fast!</p>
+        <h1>Online Food Ordering Portal</h1>
+        <p>Fresh Food Delivered to Your Door</p>
     </header>
-    <div class="container">
-        <div class="promo">🔥 PROMO: Use code BITE20 for 20% off your first order!</div>
-        <h2>Restaurant: Gourmet Kitchen</h2>
-        <p><strong>Category:</strong> Italian / Continental | <strong>Availability:</strong> <span class="status">Open Now</span></p>
-        
-        <h3>Menu Items</h3>
-        <div class="menu-item">
-            <span>Margherita Pizza</span>
-            <span class="price">$12.99</span>
-        </div>
-        <div class="menu-item">
-            <span>Creamy Alfredo Pasta</span>
-            <span class="price">$14.50</span>
-        </div>
-    </div>
+
+    <nav>
+        <a href="#restaurant">Restaurant</a>
+        <a href="#categories">Categories</a>
+        <a href="#menu">Menu</a>
+        <a href="#offers">Offers</a>
+    </nav>
+
+    <main>
+        <section id="restaurant">
+            <h2>Restaurant Details</h2>
+            <p><strong>Restaurant:</strong> Food Corner</p>
+            <p><strong>Cuisine:</strong> Indian and Continental</p>
+            <p><strong>Opening Hours:</strong> 10:00 AM - 10:00 PM</p>
+            <p><strong>Availability:</strong> Open for orders</p>
+        </section>
+
+        <section id="categories">
+            <h2>Food Categories</h2>
+            <ul>
+                <li>Starters</li>
+                <li>South Indian</li>
+                <li>North Indian</li>
+                <li>Beverages</li>
+                <li>Desserts</li>
+            </ul>
+        </section>
+
+        <section id="menu">
+            <h2>Menu Items and Prices</h2>
+            <ul>
+                <li>Masala Dosa - ₹80 - Available</li>
+                <li>Veg Fried Rice - ₹140 - Available</li>
+                <li>Paneer Butter Masala - ₹180 - Available</li>
+                <li>Chicken Biryani - ₹220 - Available</li>
+                <li>Chocolate Brownie - ₹90 - Available</li>
+            </ul>
+        </section>
+
+        <section id="offers">
+            <h2>Promotional Offers</h2>
+            <div class="offer">
+                <p><strong>WELCOME10:</strong> 10% off on eligible orders.</p>
+                <p><strong>COMBO OFFER:</strong> Save on selected meal combinations.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Release Information</h2>
+            <p>Deployment: Docker and Kubernetes</p>
+            <p>Automation: Jenkins CI/CD Pipeline</p>
+            <p>Strategy: Blue-Green Deployment</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Online Food Ordering Portal</p>
+    </footer>
 </body>
 </html>
